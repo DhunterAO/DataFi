@@ -10,7 +10,7 @@ With the internet industry and platform economy thriving, data, which is almost 
 ## How we built it
 We implement an extended standard ERC721D which is the data version of ERC721. The main difference is that we add a storage mapping and the function read, which can read the data from the Data NFT. And the data could only be accessed by the address with authorization. So we add a series of authorization functions "authorize", "getAuthorized", "setAuthorizationForAll" like the approval funtions. The main difference is that the address approved can transfer the NFT while the address authorized can only access the data.
 
-## To show the use of ERC721D, we implement a Scholar System including 2 contracts. The first one is ScoreData contract which is used to store the score of students. After the score data is minted, the second contract is Scholarship Contract, which access data from the Score Contract and automatically award the scholarship to student who own the score.
+To show the use of ERC721D, we implement a Scholar System including 2 contracts. The first one is ScoreData contract which is used to store the score of students. After the score data is minted, the second contract is Scholarship Contract, which access data from the Score Contract and automatically award the scholarship to student who own the score.
 
 ## Challenges we ran into
 We would like to mint this score with the API from Chainlink, but there are some bugs in Mumbai Network so we failed to finish it before this deadline. We'll try to fix it in the future to enhance the trust of the data.
